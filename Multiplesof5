@@ -1,0 +1,23 @@
+using System;
+
+namespace MultiplesOf5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a limit: ");
+            int limit = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Multiples of 5:");
+
+            for (int i = 1; i <= limit; i++)
+            {
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
